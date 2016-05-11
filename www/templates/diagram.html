@@ -1,0 +1,18 @@
+<ion-view title="Diagram" hide-nav-bar="true" id="page8">
+  <ion-content padding="false"
+               style="background: url(img/dCAFVET4TaW5RJ2JelLw_5rVml.png) no-repeat center;background-size:cover;"
+               class="manual-ios-statusbar-padding" scroll="false">
+    <div id="canvasContainer" style="height:100%;">
+      <canvas id="c"></canvas>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-stable">
+    <div class="title">
+      <button class="button button-clear" style="color: {{brushcolor}}" ng-click="addText()">Aa</button>
+      <button class="button button-icon ion-paintbrush" ng-click="drawingMode()"></button>
+      <button class="button button-icon ion-android-color-palette" style="color: {{brushcolor}}"
+              ng-if="showColorPaletteIcon" ng-click="openColorsPopover($event)"></button>
+      <button class="button button-icon ion-ios-undo" ng-click="undoLastObject()"></button>
+    </div>
+  </ion-footer-bar>
+</ion-view>
