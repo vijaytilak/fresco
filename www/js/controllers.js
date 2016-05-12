@@ -21,7 +21,6 @@ angular.module('app.controllers', [])
     var width = document.getElementById('canvasContainer').offsetWidth; // width of canvas
     var height = document.getElementById('canvasContainer').offsetHeight; // height of canvas
 
-
     var canvas = new fabric.Canvas('c',{
       backgroundColor: 'rgb(100,100,200)',
       selectionColor: 'blue',
@@ -34,7 +33,6 @@ angular.module('app.controllers', [])
     canvas.setHeight(height);
     canvas.setWidth(width);
 
-
     // Monkey patch in support for ID parameter
     fabric.Object.prototype.toObject = (function (toObject) {
       return function () {
@@ -43,8 +41,6 @@ angular.module('app.controllers', [])
         });
       };
     })(fabric.Object.prototype.toObject);
-
-
 
   })
 
